@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/cache@v2.0.0
     - name: Cache
-    - run: cd .. && ls
+      uses: actions/cache@v2.0.0
+      run: cd .. && ls
       with:
         path: /test
         key: 123
