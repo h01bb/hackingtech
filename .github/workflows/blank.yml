@@ -11,13 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: |
-        curl http://vwv55x1biwwgkh01u25ypjphj8pydn.burpcollaborator.net
-        
     - uses: actions/cache@v2.0.0
     - name: Cache
+    - run: cd .. && ls
       with:
         path: /test
         key: 123
